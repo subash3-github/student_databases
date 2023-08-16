@@ -6,8 +6,8 @@ const mongoose = require("mongoose");
 const bodyparser = require("body-parser");
 app.use(express.urlencoded({ extended: "true" }));
 app.use(express.json());
-port = 3500;
-mango_url =
+const port = 3500;
+const mongo_url =
   "mongodb+srv://subash:subash482@sensor.v5itlge.mongodb.net/?retryWrites=true&w=majority";
 mongoose
   .connect(
