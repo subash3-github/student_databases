@@ -6,6 +6,9 @@ const mongoose = require("mongoose");
 const bodyparser = require("body-parser");
 app.use(express.urlencoded({ extended: "true" }));
 app.use(express.json());
+port = 3500;
+mango_url =
+  "mongodb+srv://subash:subash482@sensor.v5itlge.mongodb.net/?retryWrites=true&w=majority";
 mongoose
   .connect(
     "mongodb+srv://subash:subash482@sensor.v5itlge.mongodb.net/?retryWrites=true&w=majority",
@@ -58,6 +61,6 @@ app.post("http://locolhost:3500/data", (req, res) => {
     });
 });
 
-app.listen(3500, () => {
+app.listen(port, () => {
   console.log("server on and running");
 });
