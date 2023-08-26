@@ -1,11 +1,11 @@
 {
-  "name": "student_databases",
+  "name": "retrival",
   "version": "1.0.0",
   "description": "",
-  "main": "student.js",
+  "main": "retrival.js",
   "scripts": {
-    "start":"node student.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon retrival.js"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,6 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "mongoose": "^7.4.2",
-    "nodemon": "^3.0.1"
+    "mongoose": "^7.4.3"
   }
 }
